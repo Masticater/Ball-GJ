@@ -9,10 +9,15 @@ public class Player : MonoBehaviour
     float xMovement, yMovement;
     public float speed;
     public float yMaxLimit, yMinLimit, xMinLimit, xMaxLimit;
+    private readonly int maxHealth = 2, maxLives = 3;
+    public int curHealth, curLives;
+    public GameObject explosion;
 
     void Start()
 	{
         rb2d = GetComponent<Rigidbody2D>();
+        curHealth = maxHealth;
+        curLives = maxLives;
 	}
 	
 
@@ -34,5 +39,28 @@ public class Player : MonoBehaviour
 
         Vector2 targetPos = new Vector2(Mathf.Clamp(transform.position.x, xMinLimit, xMaxLimit), Mathf.Clamp(transform.position.y, yMinLimit, yMaxLimit));
         transform.position = targetPos;
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.transform.CompareTag("Enemy"))
+        {
+            ReceiveDamage();
+            Instantiate(explosion, transform.position, Quaternion.identity);
+            Destroy(other.gameObject);
+        }
+
+    }
+
+    public void ReceiveDamage()
+    {
+        curHealth--;
+        if (curHealth <= 0)
+            Die();
+    }
+
+    void Die()
+    {
+        print("Crash and Burn!");
     }
 }

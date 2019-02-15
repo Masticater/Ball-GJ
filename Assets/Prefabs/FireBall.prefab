@@ -29,8 +29,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2409273663617190548}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2, y: 1.2, z: 1}
+  m_LocalPosition: {x: -0.194, y: 0.1179, z: 0}
+  m_LocalScale: {x: 0.7433223, y: 0.7433223, z: 0.61943525}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -115,6 +115,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 5
+  earthForce: 0
+  earthForceDirection: {x: 0, y: 0}
+  waterForce: 0
+  waterForceDirection: {x: 0, y: 0}
   destroyTimer: 3
   explosion: {fileID: 6482943858808709051, guid: e1a99b557b9a40845ad6fecba2c68d42,
     type: 3}

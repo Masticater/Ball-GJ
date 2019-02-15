@@ -18,7 +18,7 @@ public class EnemyActivator : MonoBehaviour
         if(enemy != null)
         {
             enemy.active = true;
-            print("Enabled enemy");
+           // print("Enabled enemy");
         }
     }
     void OnTriggerExit2D(Collider2D collision)
