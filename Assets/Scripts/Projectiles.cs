@@ -69,15 +69,16 @@ public class Projectiles : MonoBehaviour
 
         if (!collision.CompareTag("MainCamera") && collision.transform != transform.parent && !collision.CompareTag("Water"))
         {
+            if (type == WeaponType.Rocket && collision.CompareTag("Enemy"))
+                return;
             Instantiate(explosion, collision.transform.position, Quaternion.identity);
-            print(collision.tag);
             if (collision.CompareTag("Player"))
                 collision.GetComponent<Player>().ReceiveDamage();
             else
             {
                 Destroy(collision.gameObject);
-                Destroy(gameObject);
             }
+            Destroy(gameObject);
         }          
     }
 }

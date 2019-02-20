@@ -114,11 +114,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf068d402d5ef24468df7f2089efc5a2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
+  speed: 6
   earthForce: 0
   earthForceDirection: {x: 0, y: 0}
   waterForce: 0
   waterForceDirection: {x: 0, y: 0}
+  windSpinSpeed: 0
   destroyTimer: 3
   explosion: {fileID: 6482943858808709051, guid: e1a99b557b9a40845ad6fecba2c68d42,
     type: 3}

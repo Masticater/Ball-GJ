@@ -28,8 +28,7 @@ public class Enemies : MonoBehaviour
             if (attackTime <= 0)
             {
                 attackTime = Random.Range(minTime, maxTime);
-                GameObject shot = Instantiate(projectile, shotSpawn.transform.position, shotSpawn.rotation);
-                shot.transform.SetParent(transform);
+                Instantiate(projectile, shotSpawn.transform.position, shotSpawn.rotation);
             }
         }
         else

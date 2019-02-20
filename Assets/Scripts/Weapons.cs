@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Weapons : MonoBehaviour
 {
@@ -21,20 +20,25 @@ public class Weapons : MonoBehaviour
 
     void Update()
     {
-        attackTimer -= Time.deltaTime;
+        if (!Player.dead)
+        {
+            attackTimer -= Time.deltaTime;
 
-        if (Input.GetKeyDown(KeyCode.Space) && attackTimer <= 0f)
-        {
-            attackTimer = attackTimerReset;
-            Shoot(attack[currentAttack]);
-        }
-        if (Input.GetKeyDown(KeyCode.Tab))
-        {
-            currentAttack++;
-            if (currentAttack > attack.Length - 1)
-                currentAttack = 0;
-            print("Current attack is: " + currentAttack);
-            UpdatePlayerUI();
+            if (Input.GetKeyDown(KeyCode.Space) && attackTimer <= 0f)
+            {
+                attackTimer = attackTimerReset;
+                if (attack[currentAttack].GetComponent<Projectiles>().type == Projectiles.WeaponType.Wind)
+                    attackTimer = 3;
+                Shoot(attack[currentAttack]);
+            }
+            if (Input.GetKeyDown(KeyCode.Tab))
+            {
+                currentAttack++;
+                if (currentAttack > attack.Length - 1)
+                    currentAttack = 0;
+                print("Current attack is: " + currentAttack);
+                UpdatePlayerUI();
+            }
         }
     }
 

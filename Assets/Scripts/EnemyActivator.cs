@@ -23,6 +23,7 @@ public class EnemyActivator : MonoBehaviour
     }
     void OnTriggerExit2D(Collider2D collision)
     {
-        Destroy(collision.gameObject);
+        if(!collision.CompareTag("Player"))
+            Destroy(collision.gameObject);
     }
 }
