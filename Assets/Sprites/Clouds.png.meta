@@ -14,6 +14,9 @@ TextureImporter:
     21300018: DS DSi - Giana Sisters DS - Clouds_9
     21300020: DS DSi - Giana Sisters DS - Clouds_10
     21300022: DS DSi - Giana Sisters DS - Clouds_11
+    21300024: Clouds_0
+    21300026: Clouds_1
+    21300028: Clouds_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -118,127 +121,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_0
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 126
-        width: 48
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fab990602a69f12439dfbe9faa87b14d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_1
-      rect:
-        serializedVersion: 2
-        x: 50
-        y: 126
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c5020bfe5d4778b498a97a4ccb6705a4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_2
-      rect:
-        serializedVersion: 2
-        x: 59
-        y: 126
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d1384835da7296f4abbba3d52f72068d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_3
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 126
-        width: 7
-        height: 7
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fe88ad216d9423442a6a24035a819e47
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_4
-      rect:
-        serializedVersion: 2
-        x: 77
-        y: 126
-        width: 7
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 30bf52fcf2405364baa4724bf751f70a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_5
-      rect:
-        serializedVersion: 2
-        x: 2
-        y: 105
-        width: 7
-        height: 20
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3551b4acb6320fa428abb2fe805c305d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_6
+      name: Clouds_0
       rect:
         serializedVersion: 2
         x: 11
@@ -252,33 +135,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ebe1fee6cc3f1d74fb1be9403fa5c2e5
+      spriteID: 5f0e277e1cdedc544befb610003ee646
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_7
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 68
-        width: 6
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 339e41c1db8307c47824fcaa26077ccb
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_8
+      name: Clouds_1
       rect:
         serializedVersion: 2
         x: 10
@@ -292,39 +155,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 839404b4eb02e3f45a34ff708cac6cee
+      spriteID: e9a5ad60dc9da22448d2ca6a47d168d6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_9
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 27
-        width: 6
-        height: 40
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f1d7e544abd3c7245ad643c27704261e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_10
+      name: Clouds_2
       rect:
         serializedVersion: 2
         x: 10
         y: 3
-        width: 74
-        height: 46
+        width: 70
+        height: 45
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -332,27 +175,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6306aa4427cd4e64ab30a3d3c45e865b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: DS DSi - Giana Sisters DS - Clouds_11
-      rect:
-        serializedVersion: 2
-        x: 1
-        y: 4
-        width: 7
-        height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4cbd42c0fdd6623448ffd5d400b46e9f
+      spriteID: ef51e86763014e946bd961e198697b55
       vertices: []
       indices: 
       edges: []

@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class GameController : MonoBehaviour
 {
     public Sprite[] weaponIcons;
     public GameObject weaponIcon;
+    public TextMeshProUGUI score;
+    static int currentScore = 0;
+    //public GameController _controller;
 
 	void Start()
 	{
         UpdateWeaponIcon(0);
+        UpdateScore(0);
 	}
 	
     public void UpdateWeaponIcon(int weapon)
@@ -20,6 +25,10 @@ public class GameController : MonoBehaviour
         //2 = Waterball
         //3 = WindPower
         weaponIcon.GetComponent<Image>().sprite = weaponIcons[weapon];
-        print("Changed Icon");
+    }
+
+    public void UpdateScore(int amount)
+    {
+        score.text = (amount + currentScore).ToString();
     }
 }

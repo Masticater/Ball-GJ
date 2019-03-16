@@ -17,5 +17,8 @@ public class WindPower : MonoBehaviour
     {
         transform.position = player.transform.position; 
         transform.Rotate(new Vector3(0,0,1) * speed);
+
+        if (transform.childCount == 0)
+            Destroy(gameObject);
     }
 }

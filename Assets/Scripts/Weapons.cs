@@ -36,7 +36,6 @@ public class Weapons : MonoBehaviour
                 currentAttack++;
                 if (currentAttack > attack.Length - 1)
                     currentAttack = 0;
-                print("Current attack is: " + currentAttack);
                 UpdatePlayerUI();
             }
         }
