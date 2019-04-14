@@ -383,6 +383,7 @@ MonoBehaviour:
   explosion: {fileID: 6482943858808709051, guid: e1a99b557b9a40845ad6fecba2c68d42,
     type: 3}
   crashingDirection: {x: 2, y: -2}
+  ship: {fileID: 540777803264900709}
 --- !u!114 &540777803417102517
 MonoBehaviour:
   m_ObjectHideFlags: 0

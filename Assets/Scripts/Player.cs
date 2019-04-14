@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
     public GameObject explosion;
     public Vector2 crashingDirection;
     public static bool dead = false;
+    public SpriteRenderer ship;
+    private int blinks;
 
     void Start()
 	{
@@ -70,10 +72,26 @@ public class Player : MonoBehaviour
          //   IFrames();
     }
 
+    IEnumerator Blink()
+    {
+        ship.enabled = true;
+        print(blinks);
+        blinks--;
+        if (blinks == 0)
+        {
+            ResetLevel();
+            yield break;
+        }
+        yield return new WaitForSeconds(0.2f);
+        ship.enabled = false;
+        StartCoroutine(Blink());
+        
+    }
 
     void Die()
     {
         Invoke("ResetLevel", 3);
+        blinks = 5;
         dead = true;
         GetComponent<BoxCollider2D>().enabled = false;
         Vector3 crashing = new Vector3(transform.rotation.x, transform.rotation.y, -20);
@@ -99,10 +117,15 @@ public class Player : MonoBehaviour
 
     void ResetLevel()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        //dead = false;
-        //rb2d.drag = 5;
-        //transform.rotation = Quaternion.Euler(0, 0, 0);
-        //transform.position = startPosition;
+        StartCoroutine(Blink());
+        transform.position = startPosition;
+        dead = false;
+        rb2d.drag = 5;
+        transform.rotation = Quaternion.Euler(0, 0, 0);
+        
+        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        
+        
+        
     }
 }

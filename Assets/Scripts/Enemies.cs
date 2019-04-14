@@ -24,16 +24,15 @@ public class Enemies : MonoBehaviour
         if (active)
         {
             attackTime -= Time.deltaTime;
-            rb2d.velocity = transform.right * speed;
+            //rb2d.velocity = transform.right * speed;
             if (attackTime <= 0)
             {
                 attackTime = Random.Range(minTime, maxTime);
                 Instantiate(projectile, shotSpawn.transform.position, shotSpawn.rotation);
             }
         }
-        else
-        {
-            rb2d.velocity = transform.right * speed;
-        }
+        
+        rb2d.velocity = transform.right * speed;
+        
     }
 }
