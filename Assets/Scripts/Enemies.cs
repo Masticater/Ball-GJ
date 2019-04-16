@@ -4,35 +4,32 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
+    Enemy enemy;
     public float attackTime, minTime, maxTime;
     public Transform shotSpawn;
-    public GameObject projectile;
 
     Rigidbody2D rb2d;
-    public float speed = 5;
-
-    public bool active = false;
 
 	void Start()
 	{
+        enemy = GetComponent<Enemy>();
+        if (!enemy)
+            print("No enemy script");
         rb2d = GetComponent<Rigidbody2D>();
 	}
 	
 
     void Update()
     {
-        if (active)
+        if (enemy.Active)
         {
             attackTime -= Time.deltaTime;
-            //rb2d.velocity = transform.right * speed;
             if (attackTime <= 0)
             {
                 attackTime = Random.Range(minTime, maxTime);
-                Instantiate(projectile, shotSpawn.transform.position, shotSpawn.rotation);
+                Instantiate(enemy.Projectile, shotSpawn.transform.position, shotSpawn.rotation);
             }
         }
-        
-        rb2d.velocity = transform.right * speed;
-        
+        rb2d.velocity = transform.right * enemy.Speed;
     }
 }

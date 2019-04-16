@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 410644278904691063}
   - component: {fileID: 7878203397583564950}
+  - component: {fileID: 7560298121268073991}
   - component: {fileID: 7339269023360120021}
   - component: {fileID: 4646893721639941790}
   - component: {fileID: 1040151301}
@@ -83,6 +84,23 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7560298121268073991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4646893721639941789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa164f2ccf0abf54fad8cfe17bc536da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointValue: 15
+  Projectile: {fileID: 3653195515519010188, guid: a7922e1c62911404892b97efb6403901,
+    type: 3}
+  Speed: 0
+  Active: 0
 --- !u!114 &7339269023360120021
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -99,10 +117,6 @@ MonoBehaviour:
   minTime: 4
   maxTime: 5
   shotSpawn: {fileID: 1468345766828674100}
-  projectile: {fileID: 3653195515519010188, guid: a7922e1c62911404892b97efb6403901,
-    type: 3}
-  speed: -1.5
-  active: 0
 --- !u!50 &4646893721639941790
 Rigidbody2D:
   serializedVersion: 4

@@ -18,9 +18,11 @@ public class Player : MonoBehaviour
     public static bool dead = false;
     public SpriteRenderer ship;
     private int blinks;
+    Animator[] anims;
 
     void Start()
 	{
+        anims = GetComponentsInChildren<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         startPosition = transform.position;
         curHealth = maxHealth;
@@ -75,33 +77,33 @@ public class Player : MonoBehaviour
     IEnumerator Blink()
     {
         ship.enabled = true;
-        print(blinks);
         blinks--;
         if (blinks == 0)
         {
-            ResetLevel();
+            GetComponent<BoxCollider2D>().enabled = true;
             yield break;
         }
-        yield return new WaitForSeconds(0.2f);
+        yield return new WaitForSeconds(0.1f);
         ship.enabled = false;
+        yield return new WaitForSeconds(0.1f);
         StartCoroutine(Blink());
         
     }
 
+    
+
     void Die()
     {
         Invoke("ResetLevel", 3);
-        blinks = 5;
+        blinks = 7;
         dead = true;
         GetComponent<BoxCollider2D>().enabled = false;
         Vector3 crashing = new Vector3(transform.rotation.x, transform.rotation.y, -20);
         transform.rotation = Quaternion.Euler(crashing);
 
-        foreach(Transform child in transform)
+        foreach(Animator anim in anims)
         {
-            if (child.gameObject.activeSelf == false){
-                child.gameObject.SetActive(true);
-            }
+            anim.SetBool("dead", true);
         }
 
         rb2d.drag = 0;
@@ -120,12 +122,19 @@ public class Player : MonoBehaviour
         StartCoroutine(Blink());
         transform.position = startPosition;
         dead = false;
+        curHealth = maxHealth;
         rb2d.drag = 5;
         transform.rotation = Quaternion.Euler(0, 0, 0);
-        
+
+
+        foreach (Animator anim in anims)
+        {
+            anim.SetBool("dead", false);
+        }
+
         //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        
-        
-        
+
+
+
     }
 }

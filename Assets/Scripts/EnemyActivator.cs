@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof (BoxCollider2D))]
+
 public class EnemyActivator : MonoBehaviour
 {
-    public BoxCollider2D bc;
-
 	void Start()
 	{
 
@@ -14,10 +14,10 @@ public class EnemyActivator : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        Enemies enemy = collision.GetComponent<Enemies>();
+        Enemy enemy = collision.GetComponent<Enemy>();
         if(enemy != null)
         {
-            enemy.active = true;
+            enemy.Active = true;
            // print("Enabled enemy");
         }
     }

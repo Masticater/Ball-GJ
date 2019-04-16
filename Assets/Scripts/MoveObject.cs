@@ -16,7 +16,7 @@ public class MoveObject : MonoBehaviour
     {
         transform.position += moveDirection * Time.deltaTime;
 
-        if(transform.position.x <= 2.23f && CompareTag("EnemyBase"))
+        if(transform.position.x <= 2.3f && CompareTag("EnemyBase"))
         {
             GetComponent<MoveObject>().enabled = false;
         }

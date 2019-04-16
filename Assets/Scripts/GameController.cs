@@ -9,7 +9,7 @@ public class GameController : MonoBehaviour
     public Sprite[] weaponIcons;
     public GameObject weaponIcon;
     public TextMeshProUGUI score;
-    static int currentScore = 0;
+    public int currentScore = 0;
     //public GameController _controller;
 
 	void Start()
@@ -29,6 +29,7 @@ public class GameController : MonoBehaviour
 
     public void UpdateScore(int amount)
     {
-        score.text = (amount + currentScore).ToString();
+        currentScore += amount;
+        score.text = currentScore.ToString();
     }
 }

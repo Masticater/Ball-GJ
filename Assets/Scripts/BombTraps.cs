@@ -6,10 +6,6 @@ public class BombTraps : MonoBehaviour
 {
     public float speed = 5;
     public float xDir, yDir;
-    void Start()
-	{
-	}
-	
 
     void Update()
     {

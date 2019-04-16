@@ -7,6 +7,8 @@ TagManager:
   - Water
   - Enemy
   - EnemyBase
+  - Destructable
+  - Group
   layers:
   - Default
   - TransparentFX
@@ -18,7 +20,7 @@ TagManager:
   - 
   - Bounds
   - Bullets
-  - 
+  - Indestructable
   - 
   - 
   - 

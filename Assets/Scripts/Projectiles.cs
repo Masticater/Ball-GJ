@@ -71,14 +71,18 @@ public class Projectiles : MonoBehaviour
         {
             if (type == WeaponType.Rocket && collision.CompareTag("Enemy"))
                 return;
-            Instantiate(explosion, collision.transform.position, Quaternion.identity);
+            
             if (collision.CompareTag("Player"))
                 collision.GetComponent<Player>().ReceiveDamage();
             else
             {
+               Enemy comp = collision.GetComponent<Enemy>();
+                if (comp)
+                    comp.GetPoints();
                 Destroy(collision.gameObject);
             }
             
+            Instantiate(explosion, collision.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }          
     }
