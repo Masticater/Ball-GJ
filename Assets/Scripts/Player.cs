@@ -78,6 +78,7 @@ public class Player : MonoBehaviour
     {
         ship.enabled = true;
         blinks--;
+        print(blinks);
         if (blinks == 0)
         {
             GetComponent<BoxCollider2D>().enabled = true;

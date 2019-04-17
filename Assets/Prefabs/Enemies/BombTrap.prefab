@@ -89,6 +89,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomb (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 3539106283965886642, guid: 2f9299944b3b3c448b83a65643ee8636,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3539106283965886641, guid: 2f9299944b3b3c448b83a65643ee8636,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -163,6 +168,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539106283965886642, guid: 2f9299944b3b3c448b83a65643ee8636,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3539106283965886641, guid: 2f9299944b3b3c448b83a65643ee8636,
         type: 3}
@@ -239,6 +249,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bomb
       objectReference: {fileID: 0}
+    - target: {fileID: 3539106283965886642, guid: 2f9299944b3b3c448b83a65643ee8636,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 3539106283965886641, guid: 2f9299944b3b3c448b83a65643ee8636,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -313,6 +328,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Bomb (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3539106283965886642, guid: 2f9299944b3b3c448b83a65643ee8636,
+        type: 3}
+      propertyPath: m_Layer
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 3539106283965886641, guid: 2f9299944b3b3c448b83a65643ee8636,
         type: 3}
