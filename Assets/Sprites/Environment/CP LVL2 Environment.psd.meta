@@ -1,33 +1,34 @@
 fileFormatVersion: 2
-guid: 1bf79566c36cb4c4396a1c781029fd43
+guid: 0843224eed8084940b8d441a80ae116f
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Water_0
-    21300002: Water_1
-    21300004: Water_2
-    21300006: Water_3
-    21300008: Water_4
-    21300010: Water_5
-    21300012: Water_6
-    21300014: Water_7
-    21300016: Water_8
-    21300018: Water_9
-    21300020: Water_10
-    21300022: Water_11
-    21300024: Water_12
-    21300026: Water_13
-    21300028: Water_14
-    21300030: Water_15
-    21300032: Water_16
-    21300034: Water_17
-    21300036: Water_18
-    21300038: Water_19
-    21300040: Water_20
-    21300042: Water_21
-    21300044: Water_22
-    21300046: Water_23
-    21300048: Water_24
-    21300050: Water_25
+    21300000: CP LVL2 Environment_0
+    21300002: CP LVL2 Environment_1
+    21300004: CP LVL2 Environment_2
+    21300006: CP LVL2 Environment_3
+    21300008: CP LVL2 Environment_4
+    21300010: CP LVL2 Environment_5
+    21300012: CP LVL2 Environment_6
+    21300014: CP LVL2 Environment_7
+    21300016: CP LVL2 Environment_8
+    21300018: CP LVL2 Environment_9
+    21300020: CP LVL2 Environment_10
+    21300022: CP LVL2 Environment_11
+    21300024: CP LVL2 Environment_12
+    21300026: CP LVL2 Environment_13
+    21300028: CP LVL2 Environment_14
+    21300030: CP LVL2 Environment_15
+    21300032: CP LVL2 Environment_16
+    21300034: CP LVL2 Environment_17
+    21300036: CP LVL2 Environment_18
+    21300038: CP LVL2 Environment_19
+    21300040: CP LVL2 Environment_20
+    21300042: CP LVL2 Environment_21
+    21300044: CP LVL2 Environment_22
+    21300046: CP LVL2 Environment_23
+    21300048: CP LVL2 Environment_24
+    21300050: CP LVL2 Environment_25
+    21300052: CP LVL2 Environment_26
   externalObjects: {}
   serializedVersion: 9
   mipmaps:
@@ -71,7 +72,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 150
+  spritePixelsToUnits: 75
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -107,17 +108,6 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-  - serializedVersion: 2
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -132,13 +122,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Water_0
+      name: CP LVL2 Environment_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 224
-        width: 256
-        height: 32
+        x: 36
+        y: 607
+        width: 27
+        height: 86
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,19 +136,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5e7dd6501cd29b4ebd829eb2d716745
+      spriteID: bc1e95033a93eb84ca9ce665aa879910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_1
+      name: CP LVL2 Environment_1
       rect:
         serializedVersion: 2
-        x: 266
-        y: 224
-        width: 65
-        height: 32
+        x: 131
+        y: 628
+        width: 37
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,19 +156,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cae3b8b758c262e45b89de405a388b05
+      spriteID: c96d9b6c00829d2499f51a93a6aced0c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_2
+      name: CP LVL2 Environment_2
       rect:
         serializedVersion: 2
-        x: 333
-        y: 223
-        width: 256
-        height: 32
+        x: 229
+        y: 631
+        width: 44
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,19 +176,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc50b0e667bd3fa4dbc3204243014db3
+      spriteID: 45a01b641cab7e94ab1de11b1570121d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_3
+      name: CP LVL2 Environment_3
       rect:
         serializedVersion: 2
-        x: 8
-        y: 191
-        width: 256
-        height: 32
+        x: 331
+        y: 629
+        width: 37
+        height: 44
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,19 +196,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 273ed8af55189c24ba202b8c401e1c9d
+      spriteID: 4192872e15e33aa42af868dc5e05f3dc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_4
+      name: CP LVL2 Environment_4
       rect:
         serializedVersion: 2
-        x: 266
-        y: 191
-        width: 65
-        height: 32
+        x: 428
+        y: 631
+        width: 44
+        height: 37
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,278 +216,18 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b7e5319336548d45a9c92a723199eda
+      spriteID: a351df355f7adbb42974b88f78fc4585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_5
+      name: CP LVL2 Environment_5
       rect:
         serializedVersion: 2
-        x: 333
-        y: 191
-        width: 256
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36dbc71427f70fe478cc1c717f08a674
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_6
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 158
-        width: 256
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7a81fd69e787aa44eb3e9752d12734e9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_7
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 158
-        width: 65
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b67108d6932b47641b0bf2337c7cf420
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_8
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 158
-        width: 256
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 65fff52caad317a42a4ebbe6b5016922
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_9
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 125
-        width: 256
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c0cc83d379bd1bb4683755ccc3063048
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_10
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 125
-        width: 65
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5f63de7f0bbc0864a82351f48a0139b1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_11
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 125
-        width: 256
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d0ab6446fe55c5c469b4964347abab7c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_12
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 92
-        width: 256
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6f73ece887ced224f88a77ab98d121ba
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_13
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 92
-        width: 65
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e4ab63799737e6e49a0df66201a60046
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_14
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 92
-        width: 256
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 452185a571c504c46bfb8062f01c6415
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_15
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 59
-        width: 256
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5b0fadf7bf56a8648830b81327a1b164
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_16
-      rect:
-        serializedVersion: 2
-        x: 266
-        y: 59
-        width: 65
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 741d936abb80c0147b9c13abef99c12e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_17
-      rect:
-        serializedVersion: 2
-        x: 333
-        y: 59
-        width: 256
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b7eb5cb4db4027d49a1cf4e31e1e48e4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Water_18
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 11
-        width: 95
+        x: 510
+        y: 638
+        width: 79
         height: 23
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -506,19 +236,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c716408b963463449a6372c97cb9f497
+      spriteID: 0474038f59862684a97bd80e9a63ddb7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_19
+      name: CP LVL2 Environment_6
       rect:
         serializedVersion: 2
-        x: 148
-        y: 12
-        width: 95
-        height: 20
+        x: 638
+        y: 610
+        width: 23
+        height: 79
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -526,19 +256,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fed9fbdebd33c3649b9ddab8b71e3c1d
+      spriteID: 0fa1e0f1e044fc942916019eac48d9c6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_20
+      name: CP LVL2 Environment_7
       rect:
         serializedVersion: 2
-        x: 260
-        y: 12
-        width: 96
-        height: 18
+        x: 731
+        y: 631
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -546,19 +276,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b9e580fc881197f458bb6d54203f519d
+      spriteID: da3c5a4903ad83e47826c2216396d06e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Water_21
+      name: CP LVL2 Environment_8
       rect:
         serializedVersion: 2
-        x: 389
-        y: 17
-        width: 96
-        height: 18
+        x: 831
+        y: 631
+        width: 38
+        height: 38
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,7 +296,367 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6dceb841b8f86a640bf3c4f1c436e04f
+      spriteID: 666e5c297c2b8d14a89bab156fc7efa8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_9
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 631
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 454d6b316a9e46a47af95ee1f5ca53a4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_10
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 631
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5e7153be0b07474ea4b589881906b23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_11
+      rect:
+        serializedVersion: 2
+        x: 12
+        y: 511
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41ef2d63f8888946b16cb826310911f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_12
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 537
+        width: 17
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ef5d4ec0a10c8d45b1bbf416de0eaa3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_13
+      rect:
+        serializedVersion: 2
+        x: 237
+        y: 525
+        width: 25
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82aeae0a5532cfd40b977cd765961b95
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_14
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 510
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786daa69065b2d2449a7af407134bd1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_15
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 510
+        width: 78
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ca7c2a62296f18469833f215afc2bb8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_16
+      rect:
+        serializedVersion: 2
+        x: 536
+        y: 512
+        width: 227
+        height: 75
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 852527feb83fc07409337948e4daaf94
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_17
+      rect:
+        serializedVersion: 2
+        x: 825
+        y: 75
+        width: 154
+        height: 521
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d968795a94f6294a97f0702a68f8da9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_18
+      rect:
+        serializedVersion: 2
+        x: 1023
+        y: 512
+        width: 154
+        height: 78
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05440bfee282a1c45863c9a11cb7158c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_19
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 412
+        width: 347
+        height: 76
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c258d3fa58a94814a87a0fec56f87f33
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_20
+      rect:
+        serializedVersion: 2
+        x: 525
+        y: 416
+        width: 152
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524a57906ca64cc4db1bb78bb7b8a1e2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_21
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 250
+        width: 651
+        height: 108
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18f6ffb70a67be445ad29e987b413130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_22
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 112
+        width: 159
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b7df0e62805aa547ae6877a0c50142b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_23
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 69
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d64320cbe7d77843965488b5609f9c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_24
+      rect:
+        serializedVersion: 2
+        x: 333
+        y: 69
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e74ea4633d474c46906e6a5bee20779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_25
+      rect:
+        serializedVersion: 2
+        x: 485
+        y: 69
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f951b773a9c1d8488869fdca42f1b60
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CP LVL2 Environment_26
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 69
+        width: 151
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc15067d3c7ab1e4bb889847b3d7ae86
       vertices: []
       indices: 
       edges: []
@@ -574,14 +664,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 8157210018c2e6d43a15c1a0b696933d
+    spriteID: 9535d2bab6f3a7e41b8f46bd132e436e
     vertices: []
     indices: 
     edges: []
     weights: []
   spritePackingTag: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
+  pSDShowRemoveMatteOption: 1
   userData: 
   assetBundleName: 
   assetBundleVariant: 

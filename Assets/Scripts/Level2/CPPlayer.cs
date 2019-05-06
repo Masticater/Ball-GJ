@@ -5,9 +5,11 @@ using UnityEngine;
 public class CPPlayer : MonoBehaviour
 {
     Animator anim;
-    float horixontalMove;
-    float moveSpeed = 1f;
+    float horizontalMove;
+    float verticalMove;
+    public float moveSpeed = 1f;
     bool punching;
+    bool movingLeft = false;
 
     void Start()
     {
@@ -17,14 +19,30 @@ public class CPPlayer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        horixontalMove = Input.GetAxisRaw("Horizontal") * moveSpeed;
+        horizontalMove = Input.GetAxisRaw("Horizontal") ;
+        verticalMove = Input.GetAxisRaw("Vertical");
         UpdateAnim();
+    }
+
+    private void LateUpdate()
+    {
+        Move();        
     }
 
     void UpdateAnim()
     {
-        anim.SetFloat("xDir", Mathf.Abs(horixontalMove));
+        anim.SetFloat("xDir", Mathf.Abs(horizontalMove));
+        if(horizontalMove < 0 && !movingLeft)
+        {
+            FlipSprite();
+        }
+        else if(horizontalMove > 0 && movingLeft)
+        {
+            FlipSprite();
+        }
 
+
+        anim.SetFloat("yDir", verticalMove);
         if (Input.GetKeyDown(KeyCode.Space) && !punching)
         {
             anim.SetBool("Punching", true);
@@ -39,5 +57,16 @@ public class CPPlayer : MonoBehaviour
         yield return new WaitForSeconds(clipLength);
         anim.SetBool("Punching", false);
         punching = false;
+    }
+
+    void Move()
+    {
+        transform.position += new Vector3(horizontalMove, verticalMove, 0).normalized * moveSpeed * Time.deltaTime;
+    }
+
+    void FlipSprite()
+    {
+        movingLeft = !movingLeft;
+        transform.Rotate(0, 180, 0);
     }
 }
