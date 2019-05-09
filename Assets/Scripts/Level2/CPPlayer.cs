@@ -5,6 +5,7 @@ using UnityEngine;
 public class CPPlayer : MonoBehaviour
 {
     Animator anim;
+    Rigidbody2D rb;
     float horizontalMove;
     float verticalMove;
     public float moveSpeed = 1f;
@@ -14,6 +15,7 @@ public class CPPlayer : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+        rb = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -61,7 +63,7 @@ public class CPPlayer : MonoBehaviour
 
     void Move()
     {
-        transform.position += new Vector3(horizontalMove, verticalMove, 0).normalized * moveSpeed * Time.deltaTime;
+        rb.velocity = new Vector2(horizontalMove, verticalMove).normalized * moveSpeed;
     }
 
     void FlipSprite()
