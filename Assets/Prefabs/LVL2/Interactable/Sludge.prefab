@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 2517397784943696730}
   - component: {fileID: 4418552694663984565}
   - component: {fileID: 5285935473957973731}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Sludge
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
