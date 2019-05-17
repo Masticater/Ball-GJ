@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4985107501149807389}
   - component: {fileID: 4307957866033778087}
   - component: {fileID: 8652316735209640878}
+  - component: {fileID: 4673866318670657639}
   m_Layer: 0
   m_Name: Jumper
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9694361, y: 0.44903564}
   m_EdgeRadius: 0
+--- !u!114 &4673866318670657639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056012081318656654}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56017c5f4816e6644aaa2139318023f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reward: {fileID: 0}

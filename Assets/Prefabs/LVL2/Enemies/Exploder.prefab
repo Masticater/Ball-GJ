@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8322663322483320642}
   - component: {fileID: 4194381417084551}
   - component: {fileID: 8451195888807847038}
+  - component: {fileID: 8746610138437188174}
   m_Layer: 0
   m_Name: Exploder
   m_TagString: Untagged
@@ -96,3 +97,16 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.35
+--- !u!114 &8746610138437188174
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756418168476885536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56017c5f4816e6644aaa2139318023f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reward: {fileID: 0}

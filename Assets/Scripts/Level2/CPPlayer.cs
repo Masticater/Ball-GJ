@@ -8,7 +8,12 @@ public class CPPlayer : MonoBehaviour
     Rigidbody2D rb;
     float horizontalMove;
     float verticalMove;
-    public float moveSpeed = 1f;
+
+    public float moveSpeed;
+    public float _moveSpeed { get; private set; }
+    [HideInInspector]
+    public bool isSlowed = false;
+
     bool punching;
     bool movingLeft = false;
 
@@ -16,6 +21,7 @@ public class CPPlayer : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        _moveSpeed = moveSpeed;
     }
 
     // Update is called once per frame

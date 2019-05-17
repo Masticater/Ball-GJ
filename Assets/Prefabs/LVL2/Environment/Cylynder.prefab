@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6818252408709337745}
   - component: {fileID: 3266902606921205485}
   - component: {fileID: 2093647690648813201}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Cylynder
   m_TagString: Untagged
   m_Icon: {fileID: 0}

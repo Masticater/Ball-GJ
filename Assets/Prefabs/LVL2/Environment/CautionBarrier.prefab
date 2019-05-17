@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8004584719541518687}
   - component: {fileID: 6595163154920237487}
   - component: {fileID: 2048526004386081127}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: CautionBarrier
   m_TagString: Untagged
   m_Icon: {fileID: 0}

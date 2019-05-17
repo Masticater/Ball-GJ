@@ -11,9 +11,11 @@ GameObject:
   - component: {fileID: 3596831889741138076}
   - component: {fileID: 1121266426431340849}
   - component: {fileID: 6052544464513946309}
+  - component: {fileID: 2972321203345369646}
+  - component: {fileID: 8511574768980504663}
   m_Layer: 0
   m_Name: MetalPlate
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -106,3 +108,38 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.74000007}
   m_EdgeRadius: 0
+--- !u!114 &2972321203345369646
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518654571854382147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56017c5f4816e6644aaa2139318023f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  reward: {fileID: 100251203317533434, guid: 2621358a84b1dba4d95100dbce33e6ff, type: 3}
+  clips:
+  - {fileID: 8300000, guid: b703f0737972b2f4ea62c807d220bddb, type: 3}
+  - {fileID: 8300000, guid: 27dd9f809afa3e84aa25de19848b9a1b, type: 3}
+--- !u!95 &8511574768980504663
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1518654571854382147}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 3c0f9bb15735c444c888c9352aa2c089, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
