@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 4194381417084551}
   - component: {fileID: 8451195888807847038}
   - component: {fileID: 8746610138437188174}
+  - component: {fileID: 1877380059358339296}
+  - component: {fileID: 1033086141755166995}
   m_Layer: 0
   m_Name: Exploder
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +112,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
+  clips: []
+--- !u!114 &1877380059358339296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756418168476885536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481f369c9209c4045b2c0afb0d9c80ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewRadius: 4.2
+  viewAngle: 360
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  visibleTargets: []
+--- !u!114 &1033086141755166995
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7756418168476885536}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa164f2ccf0abf54fad8cfe17bc536da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointValue: 10
+  Projectile: {fileID: 0}
+  Speed: 0
+  Active: 0

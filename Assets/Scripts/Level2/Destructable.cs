@@ -8,6 +8,7 @@ public class Destructable : MonoBehaviour
     public GameObject reward;
     public AudioClip[] clips;
     GameObject audioManager;
+
     private void Start()
     {
         audioManager = GameObject.Find("SoundManager");

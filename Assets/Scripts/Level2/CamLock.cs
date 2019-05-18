@@ -9,12 +9,26 @@ public class CamLock : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        cam.Follow = gameObject.transform;
+        StartCoroutine(StartBossFight(collision.gameObject));
+    }
+
+    IEnumerator StartBossFight(GameObject player)
+    {
+        yield return new WaitForSeconds(.2f);
+
         GetComponent<BoxCollider2D>().isTrigger = false;
+        cam.Follow = null;
+        iTween.MoveTo(cam.gameObject, transform.position, 3f);
 
         foreach (GameObject bossGO in boss)
         {
             bossGO.SetActive(true);
         }
+
+        if(player.transform.position.x < 45.8f)
+        {
+            iTween.MoveTo(player, new Vector3(45.8f, player.transform.position.y, 0), 1f);
+        }
+
     }
 }

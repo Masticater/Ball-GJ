@@ -16,10 +16,13 @@ public class MoveObject : MonoBehaviour
     {
         transform.position += moveDirection * Time.deltaTime;
 
-        if(transform.position.x <= 2.3f && CompareTag("EnemyBase"))
+        if(CompareTag("EnemyBase"))
         {
-            GetComponent<MoveObject>().enabled = false;
-            GetComponent<BoxCollider2D>().enabled = true;
+            if(transform.position.x <= 2.3f)
+            {
+                GetComponent<MoveObject>().enabled = false;
+                GetComponent<BoxCollider2D>().enabled = true;
+            }
         }
     }
 }

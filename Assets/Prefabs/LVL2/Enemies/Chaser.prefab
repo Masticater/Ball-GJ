@@ -12,9 +12,11 @@ GameObject:
   - component: {fileID: 5183641400889540535}
   - component: {fileID: 4297618885738958056}
   - component: {fileID: 3714892296126856896}
+  - component: {fileID: 4148274751671172582}
+  - component: {fileID: 6284657184266309471}
   m_Layer: 0
   m_Name: Chaser
-  m_TagString: Untagged
+  m_TagString: Destructable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -110,3 +112,41 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
+  clips: []
+--- !u!114 &4148274751671172582
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023104962151985624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 481f369c9209c4045b2c0afb0d9c80ca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  viewRadius: 4.2
+  viewAngle: 360
+  targetMask:
+    serializedVersion: 2
+    m_Bits: 4096
+  obstacleMask:
+    serializedVersion: 2
+    m_Bits: 1024
+  visibleTargets: []
+--- !u!114 &6284657184266309471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6023104962151985624}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa164f2ccf0abf54fad8cfe17bc536da, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PointValue: 10
+  Projectile: {fileID: 0}
+  Speed: 0
+  Active: 0

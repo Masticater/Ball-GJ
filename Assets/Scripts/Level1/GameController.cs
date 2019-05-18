@@ -30,6 +30,6 @@ public class GameController : MonoBehaviour
     public void UpdateScore(int amount)
     {
         currentScore += amount;
-        score.text = currentScore.ToString();
+            score.text = currentScore.ToString();
     }
 }
