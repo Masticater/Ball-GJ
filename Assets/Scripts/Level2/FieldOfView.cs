@@ -6,7 +6,7 @@ using UnityEditor;
 public class FieldOfView : MonoBehaviour
 {
     public float viewRadius;        //View Distance
-    [Range(0,360)]
+    [Range(0,361)]
     public float viewAngle;         //Peripheral vision
 
     public LayerMask targetMask;    //Things to look for

@@ -70,7 +70,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300062, guid: 0843224eed8084940b8d441a80ae116f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -121,9 +121,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 100251203317533434, guid: 2621358a84b1dba4d95100dbce33e6ff, type: 3}
+  debris: {fileID: 450392380249274744, guid: 101ddfda79f36194f8975d138edb169b, type: 3}
+  debrisAmount: 2
   clips:
-  - {fileID: 8300000, guid: b703f0737972b2f4ea62c807d220bddb, type: 3}
-  - {fileID: 8300000, guid: 27dd9f809afa3e84aa25de19848b9a1b, type: 3}
+  - {fileID: 8300000, guid: 956fd22b53107d0418739a8c9eb8eda8, type: 3}
+  - {fileID: 8300000, guid: ae37dd0226b6f5341bf65b7e8e5e2ec3, type: 3}
+  explodable: 0
+  explosion: {fileID: 0}
 --- !u!95 &8511574768980504663
 Animator:
   serializedVersion: 3

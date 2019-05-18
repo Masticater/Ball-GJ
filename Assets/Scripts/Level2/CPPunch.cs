@@ -12,7 +12,7 @@ public class CPPunch : MonoBehaviour
                 collision.GetComponent<Destructable>().DamagePlate();
             else
             {
-                collision.GetComponent<Destructable>().DestroyObject();
+                collision.GetComponent<Destructable>().DestroyObject(collision.GetComponent<Destructable>().debris);
             }
         }
     }

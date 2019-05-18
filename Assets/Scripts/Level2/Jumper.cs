@@ -50,6 +50,14 @@ public class Jumper : MonoBehaviour
         }
     }
 
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.CompareTag("Player"))
+        {
+            collision.GetComponent<CPEnergy>().LoseLife(damage * Time.deltaTime);
+        }
+    }
+
     IEnumerator StartJumping()
     {
         yield return new WaitForSeconds(Random.Range(jumpTimerMin, jumpTimerMax));

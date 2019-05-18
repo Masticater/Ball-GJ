@@ -13,6 +13,9 @@ public class CPPlayer : MonoBehaviour
     public float _moveSpeed { get; private set; }
     [HideInInspector]
     public bool isSlowed = false;
+    public AudioClip[] Sounds;
+    [HideInInspector]
+    public AudioSource audioSource;
 
     bool punching;
     bool movingLeft = false;
@@ -21,6 +24,7 @@ public class CPPlayer : MonoBehaviour
     {
         anim = GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
+        audioSource = GetComponent<AudioSource>();
         _moveSpeed = moveSpeed;
     }
 
@@ -49,13 +53,13 @@ public class CPPlayer : MonoBehaviour
             FlipSprite();
         }
 
-
         anim.SetFloat("yDir", verticalMove);
         if (Input.GetKeyDown(KeyCode.Space) && !punching)
         {
             anim.SetBool("Punching", true);
             punching = true;
             StartCoroutine(ResetAnim());
+            audioSource.PlayOneShot(Sounds[0]); //Punch sound
         }
     }
 

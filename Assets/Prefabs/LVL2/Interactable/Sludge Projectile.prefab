@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 5285935473957973731}
   - component: {fileID: 3446943868190314984}
   - component: {fileID: 7597318022663221608}
+  - component: {fileID: 5563499312767204354}
   m_Layer: 11
   m_Name: Sludge Projectile
   m_TagString: Enemy
@@ -153,3 +154,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damage: 1
   speed: 4
+  bullet: 1
+--- !u!114 &5563499312767204354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5127828025873696981}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 396cb8762da1de8408c21c8f5c8e4308, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  countdown: 3

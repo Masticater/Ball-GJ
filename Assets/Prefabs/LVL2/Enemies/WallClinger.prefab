@@ -113,7 +113,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   reward: {fileID: 0}
+  debris: {fileID: 450392380249274744, guid: 101ddfda79f36194f8975d138edb169b, type: 3}
+  debrisAmount: 1
   clips: []
+  explodable: 1
+  explosion: {fileID: 6482943858808709051, guid: e1a99b557b9a40845ad6fecba2c68d42,
+    type: 3}
 --- !u!114 &7664060056193702453
 MonoBehaviour:
   m_ObjectHideFlags: 0
