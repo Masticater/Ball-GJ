@@ -12,35 +12,42 @@ public class CPEnergy : MonoBehaviour
     public Slider slider;
     SpriteRenderer body;
     CPPlayer player;
+    Powers powers;
 
     private void Start()
     {
         slider = GameObject.Find("Slider").GetComponent<Slider>();
         body = GetComponent<SpriteRenderer>();
         player = GetComponent<CPPlayer>();
+        powers = GetComponent<Powers>();
     }
 
     public void LoseLife(float amount)
     {
-        slider.value -= amount;
-        blinks = 4;
-        if(slider.value <= 0f && !dead)
+        if (!powers.isPower)
         {
-            dead = true;
-            //CP dies
-            print("Captain Planet has died!");
-        }
+            slider.value -= amount;
+            blinks = 4;
+            if(slider.value <= 0f && !dead)
+            {
+                dead = true;
+                player.alive = false;
+                player.anim.SetBool("Dead", true);
+                //CP dies
+                print("Captain Planet has died!");
+            }
 
-        if (!flashing)
-        {
-            flashing = true;
-            StartCoroutine(Blink());
-        }
+            if (!flashing && !dead)
+            {
+                flashing = true;
+                StartCoroutine(Blink());
+            }
 
-        if (!playingSound)
-        {
-            playingSound = true;
-            StartCoroutine(Grunt());
+            if (!playingSound && !dead)
+            {
+                playingSound = true;
+                StartCoroutine(Grunt());
+            }
         }
     }
 

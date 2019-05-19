@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class CPPlayer : MonoBehaviour
 {
-    Animator anim;
+    [HideInInspector]
+    public Animator anim;
     Rigidbody2D rb;
     float horizontalMove;
     float verticalMove;
@@ -19,6 +20,7 @@ public class CPPlayer : MonoBehaviour
 
     bool punching;
     bool movingLeft = false;
+    public bool alive = true;
 
     void Start()
     {
@@ -33,17 +35,20 @@ public class CPPlayer : MonoBehaviour
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") ;
         verticalMove = Input.GetAxisRaw("Vertical");
-        UpdateAnim();
+        if(alive)
+            UpdateAnim();
     }
 
     private void LateUpdate()
     {
-        Move();        
+        if(alive)
+            Move();        
     }
 
     void UpdateAnim()
     {
         anim.SetFloat("xDir", Mathf.Abs(horizontalMove));
+
         if(horizontalMove < 0 && !movingLeft)
         {
             FlipSprite();
