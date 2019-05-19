@@ -30,7 +30,6 @@ public class CPPlayer : MonoBehaviour
         _moveSpeed = moveSpeed;
     }
 
-    // Update is called once per frame
     void Update()
     {
         horizontalMove = Input.GetAxisRaw("Horizontal") ;
@@ -41,8 +40,10 @@ public class CPPlayer : MonoBehaviour
 
     private void LateUpdate()
     {
-        if(alive)
-            Move();        
+        if (alive)
+            Move();
+        else
+            rb.velocity = Vector3.zero;
     }
 
     void UpdateAnim()

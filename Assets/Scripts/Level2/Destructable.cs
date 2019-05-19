@@ -43,6 +43,7 @@ public class Destructable : MonoBehaviour
         if (explodable)
         {
             Instantiate(explosion, transform.position, Quaternion.identity);
+            GetComponent<Enemy>().GetPoints();
         }
 
         gameObject.SetActive(false);

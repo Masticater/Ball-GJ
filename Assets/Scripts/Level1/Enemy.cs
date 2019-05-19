@@ -9,7 +9,6 @@ public class Enemy : MonoBehaviour
     public float Speed; //5
     public bool Active; //False
 
-
     private GameController gc;
 
     private void Start()

@@ -12,7 +12,7 @@ public class MoveObject : MonoBehaviour
 
     public Vector3 moveDirection;
 
-    void Update()
+    void LateUpdate()
     {
         transform.position += moveDirection * Time.deltaTime;
 

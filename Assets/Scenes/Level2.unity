@@ -41665,7 +41665,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 24.79, y: -24.764}
+  m_AnchoredPosition: {x: 24.789978, y: -24.764008}
   m_SizeDelta: {x: 32.67, y: 32.64}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &883356045
@@ -91460,6 +91460,8 @@ MonoBehaviour:
   - {fileID: 8300000, guid: a4e803a901dee444c82fbd45bba758a0, type: 3}
   - {fileID: 8300000, guid: f5557dc027b811c45a3021123e0591b4, type: 3}
   - {fileID: 8300000, guid: 9e44953b7c3080d478b9e242a67ab9c0, type: 3}
+  - {fileID: 8300000, guid: abc53c668c474e7438ce64f4486d4df3, type: 3}
+  - {fileID: 8300000, guid: e0e4ee6f3e5ab804f900b4eb9438bb16, type: 3}
   audioSource: {fileID: 0}
   alive: 1
 --- !u!61 &1970017422
@@ -98968,18 +98970,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4194381417084551, guid: 36cb38dc17850734bae0de60a85e4124, type: 3}
-      propertyPath: m_Color.g
-      value: 0.995283
-      objectReference: {fileID: 0}
-    - target: {fileID: 4194381417084551, guid: 36cb38dc17850734bae0de60a85e4124, type: 3}
-      propertyPath: m_Color.b
-      value: 0.9764151
-      objectReference: {fileID: 0}
-    - target: {fileID: 4194381417084551, guid: 36cb38dc17850734bae0de60a85e4124, type: 3}
-      propertyPath: m_Color.r
-      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36cb38dc17850734bae0de60a85e4124, type: 3}

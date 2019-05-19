@@ -7,7 +7,7 @@ public class WinLevel : MonoBehaviour
 {
 
     public GameObject player;
-    // Start is called before the first frame update
+
     void Start()
     {
         
@@ -19,7 +19,7 @@ public class WinLevel : MonoBehaviour
         {
             player.GetComponent<Player>().enabled = false;
             StartCoroutine(MoveToWin());
-
+            PlayerPrefs.SetInt("TotalScore", player.GetComponent<Weapons>().gameController.currentScore);
         }
     }
 

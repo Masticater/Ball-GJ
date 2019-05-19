@@ -10,9 +10,11 @@ public class CPEnergy : MonoBehaviour
     int blinks;
     [HideInInspector]
     public Slider slider;
+    public float powerCost = 2f;
     SpriteRenderer body;
     CPPlayer player;
     Powers powers;
+    Coroutine blinking = null;
 
     private void Start()
     {
@@ -22,25 +24,31 @@ public class CPEnergy : MonoBehaviour
         powers = GetComponent<Powers>();
     }
 
+    private void Update()
+    {
+        if (powers.isPower)
+        {
+            slider.value -= powerCost * Time.deltaTime;
+        }
+    }
+
     public void LoseLife(float amount)
     {
         if (!powers.isPower)
         {
+
             slider.value -= amount;
             blinks = 4;
-            if(slider.value <= 0f && !dead)
+            
+            if (slider.value <= 0f && !dead)
             {
-                dead = true;
-                player.alive = false;
-                player.anim.SetBool("Dead", true);
-                //CP dies
-                print("Captain Planet has died!");
+                StartCoroutine(Die());
             }
 
             if (!flashing && !dead)
             {
                 flashing = true;
-                StartCoroutine(Blink());
+                blinking = StartCoroutine(Blink());
             }
 
             if (!playingSound && !dead)
@@ -72,5 +80,20 @@ public class CPEnergy : MonoBehaviour
         player.audioSource.PlayOneShot(clip);
         yield return new WaitForSeconds(clip.length);
         playingSound = false;
+    }
+
+    IEnumerator Die()
+    {
+        dead = true;
+        player.alive = false;
+        StopCoroutine(blinking);
+        body.color = Color.white;
+        player.anim.SetBool("Dead", true);
+        player.audioSource.PlayOneShot(player.Sounds[4]);
+        player.audioSource.PlayOneShot(player.Sounds[5]);
+        yield return new WaitForSeconds(2.913f);
+       
+        yield return new WaitForSeconds(1);
+        UnityEngine.SceneManagement.SceneManager.LoadScene(5); //Load GameOver Scene
     }
 }
