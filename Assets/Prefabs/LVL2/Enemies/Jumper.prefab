@@ -124,7 +124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa164f2ccf0abf54fad8cfe17bc536da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointValue: 0
+  PointValue: 15
   Projectile: {fileID: 0}
   Speed: 0
   Active: 0

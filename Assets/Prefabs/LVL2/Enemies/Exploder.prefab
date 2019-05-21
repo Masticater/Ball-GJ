@@ -168,7 +168,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40913ce3e5258ef498c2cdb4da92bb83, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blinkTimer: 0.3
+  explodeTimer: 0.5
+  blinkTimer: 0.5
   xForce: 5
   yForce: 5
   projectile: {fileID: 5127828025873696981, guid: deb34be3b24510c4eab169ec6888af68,

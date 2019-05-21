@@ -29,10 +29,11 @@ public class Player : MonoBehaviour
         curLives = maxLives;
         dead = false;
 	}
-	
 
-    void Update()
+    private void Update()
     {
+        xMovement = Input.GetAxisRaw("Horizontal");
+        yMovement = Input.GetAxisRaw("Vertical");
     }
 
     void FixedUpdate()
@@ -41,13 +42,11 @@ public class Player : MonoBehaviour
         {
             Movement();  
         }
-
     }
 
     void Movement()
     {
-        xMovement = Input.GetAxisRaw("Horizontal");
-        yMovement = Input.GetAxisRaw("Vertical");
+        
         rb2d.AddForce(new Vector2 (xMovement, yMovement).normalized * speed);
 
         Vector2 targetPos = new Vector2(Mathf.Clamp(transform.position.x, xMinLimit, xMaxLimit), Mathf.Clamp(transform.position.y, yMinLimit, yMaxLimit));
@@ -69,7 +68,9 @@ public class Player : MonoBehaviour
     {
         curHealth--;
         if (curHealth <= 0)
+        {
             Die();
+        }
         else
         {
             GetComponent<BoxCollider2D>().enabled = false;
@@ -95,10 +96,13 @@ public class Player : MonoBehaviour
     }
 
     
-
     void Die()
     {
-        Invoke("ResetLevel", 3);
+        curLives--;
+        if (curLives > 0)
+            Invoke("ResetLevel", 3);
+        else
+            StartCoroutine(GameOver());
         blinks = 7;
         dead = true;
         GetComponent<BoxCollider2D>().enabled = false;
@@ -114,12 +118,13 @@ public class Player : MonoBehaviour
         rb2d.drag = 0;
         rb2d.velocity = new Vector3(0, 0, 0);
         rb2d.AddForce(crashingDirection, ForceMode2D.Impulse);
+    }
 
-
-        //Vector2 targetPos = new Vector2(transform.position.x + crashingDirection.x, transform.position.y + crashingDirection.y);
-        //transform.position = targetPos;
-
-        //print("Crash and Burn!");
+    IEnumerator GameOver()
+    {
+        PlayerPrefs.SetInt("LastLevel", SceneManager.GetActiveScene().buildIndex);
+        yield return new WaitForSeconds(3);
+        SceneManager.LoadScene(5);
     }
 
     void ResetLevel()
@@ -137,10 +142,5 @@ public class Player : MonoBehaviour
         {
             anim.SetBool("dead", false);
         }
-
-        //SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-
-
-
     }
 }

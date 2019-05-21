@@ -452,8 +452,8 @@ GameObject:
   - component: {fileID: 1490952804}
   - component: {fileID: 1490952807}
   - component: {fileID: 1490952806}
-  - component: {fileID: 1490952805}
   - component: {fileID: 1490952808}
+  - component: {fileID: 1490952805}
   m_Layer: 0
   m_Name: FinalScore
   m_TagString: Untagged
@@ -480,25 +480,19 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -123.59999}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1490952805
-Animator:
-  serializedVersion: 3
+--- !u!114 &1490952805
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1490952803}
   m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: e12c7a85e9eec6443987739ef4fb4794, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7e8904f234770c843844593e7151064c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  level: 0
 --- !u!114 &1490952806
 MonoBehaviour:
   m_ObjectHideFlags: 0

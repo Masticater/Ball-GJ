@@ -10,6 +10,7 @@ public class WallClinger : MonoBehaviour
     FieldOfView fov;
     void Start()
     {
+        attackTime = Random.Range(minTime, maxTime);
         enemy = GetComponent<Enemy>();
         fov = GetComponent<FieldOfView>();
     }

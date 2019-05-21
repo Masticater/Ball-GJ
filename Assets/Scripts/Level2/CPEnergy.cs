@@ -6,14 +6,16 @@ using UnityEngine.UI;
 public class CPEnergy : MonoBehaviour
 {
     bool dead = false;
-    bool flashing, playingSound;
+    bool flashing, playingSound, flashBar;
     int blinks;
     [HideInInspector]
     public Slider slider;
-    public float powerCost = 2f;
+    public Image fill;
+    public float powerCost = 1.5f;
     SpriteRenderer body;
     CPPlayer player;
-    Powers powers;
+    [HideInInspector]
+    public Powers powers;
     Coroutine blinking = null;
 
     private void Start()
@@ -29,6 +31,12 @@ public class CPEnergy : MonoBehaviour
         if (powers.isPower)
         {
             slider.value -= powerCost * Time.deltaTime;
+
+            if (slider.value <= 0 && !dead)
+            {
+                dead = true;
+                StartCoroutine(Die());
+            }
         }
     }
 
@@ -40,6 +48,12 @@ public class CPEnergy : MonoBehaviour
             slider.value -= amount;
             blinks = 4;
             
+            if(slider.value <= 4 && !flashBar)
+            {
+                flashBar = true;
+                StartCoroutine(FlashHealthBar(.3f));
+            }
+
             if (slider.value <= 0f && !dead)
             {
                 StartCoroutine(Die());
@@ -82,11 +96,25 @@ public class CPEnergy : MonoBehaviour
         playingSound = false;
     }
 
+    IEnumerator FlashHealthBar(float delay)   //Repeat searching function
+    {
+        while (slider.value <= 4)
+        {
+            fill.color = Color.red;
+            yield return new WaitForSeconds(delay);
+            fill.color = Color.yellow;
+            yield return new WaitForSeconds(delay);
+        }
+        flashBar = false;
+    }
+
+
     IEnumerator Die()
     {
         dead = true;
         player.alive = false;
-        StopCoroutine(blinking);
+        if(blinking != null)
+            StopCoroutine(blinking);
         body.color = Color.white;
         player.anim.SetBool("Dead", true);
         player.audioSource.PlayOneShot(player.Sounds[4]);
@@ -94,6 +122,7 @@ public class CPEnergy : MonoBehaviour
         yield return new WaitForSeconds(2.913f);
        
         yield return new WaitForSeconds(1);
+        PlayerPrefs.SetInt("LastLevel", UnityEngine.SceneManagement.SceneManager.GetActiveScene().buildIndex);
         UnityEngine.SceneManagement.SceneManager.LoadScene(5); //Load GameOver Scene
     }
 }

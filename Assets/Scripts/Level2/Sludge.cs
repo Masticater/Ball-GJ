@@ -11,7 +11,8 @@ public class Sludge : MonoBehaviour
         {
             CPPlayer player = collision.GetComponent<CPPlayer>();
             CPEnergy energy = collision.GetComponent<CPEnergy>();
-            if(!player.isSlowed)
+
+            if(!player.isSlowed && !energy.powers)
             {
                 player.isSlowed = true;
                 player.moveSpeed /= 2;

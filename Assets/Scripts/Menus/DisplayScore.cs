@@ -9,7 +9,7 @@ public class DisplayScore : MonoBehaviour
     {
         text = GetComponent<TMPro.TextMeshProUGUI>();
         text.text = "Final Score - " + PlayerPrefs.GetInt("TotalScore");
-        PlayerPrefs.DeleteAll();
+        PlayerPrefs.DeleteKey("TotalScore");
     }
     
 

@@ -14,8 +14,6 @@ public class GameController : MonoBehaviour
 
 	void Start()
 	{
-        print(PlayerPrefs.GetInt("TotalScore"));
-        //print(PlayerPrefs.)
         currentScore = PlayerPrefs.GetInt("TotalScore");
         PlayerPrefs.SetInt("TotalScore", currentScore);
         UpdateWeaponIcon(0);

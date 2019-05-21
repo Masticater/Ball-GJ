@@ -8,17 +8,23 @@ public class LoadNewLevel : MonoBehaviour
 {
     public int level;
 
-    // Update is called once per frame
+    private void Start()
+    {
+        level = PlayerPrefs.GetInt("LastLevel");
+    }
+
     void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
             LoadLevel(level);
+
+        if (Input.GetKeyDown(KeyCode.Escape))
+            LoadLevel(0);
     }
 
 
     public void LoadLevel(int level)
     {
-        if(EditorApplication.isPlaying)
             SceneManager.LoadScene(level);
     }
 }

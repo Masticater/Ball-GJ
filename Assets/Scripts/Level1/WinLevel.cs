@@ -20,6 +20,7 @@ public class WinLevel : MonoBehaviour
             player.GetComponent<Player>().enabled = false;
             StartCoroutine(MoveToWin());
             PlayerPrefs.SetInt("TotalScore", player.GetComponent<Weapons>().gameController.currentScore);
+            PlayerPrefs.SetInt("LastLevel", 4);
         }
     }
 

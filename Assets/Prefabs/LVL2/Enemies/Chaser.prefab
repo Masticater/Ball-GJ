@@ -137,7 +137,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa164f2ccf0abf54fad8cfe17bc536da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointValue: 10
+  PointValue: 20
   Projectile: {fileID: 0}
   Speed: 0
   Active: 0
@@ -153,6 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26ecf4531cd9bfd49b68d6c7970b76c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explodeTimer: 1
   blinkTimer: 1
   xForce: 5
   yForce: 5

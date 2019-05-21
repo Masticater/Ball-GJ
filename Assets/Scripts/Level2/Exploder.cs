@@ -6,7 +6,7 @@ public class Exploder : MonoBehaviour
 {
 
     FieldOfView fov;
-    float explodeTimer = 1;
+    public float explodeTimer = 1;
     int blinks;
     SpriteRenderer body;
     bool flashing = false;
@@ -32,7 +32,7 @@ public class Exploder : MonoBehaviour
             if(explodeTimer <= 0 && !flashing)
             {
                 flashing = true;
-                blinks = 7;
+                blinks = 5;
                 StartCoroutine(StartBlowUp());
             }
         }

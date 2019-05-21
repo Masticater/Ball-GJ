@@ -31,11 +31,12 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 2800000, guid: 0843224eed8084940b8d441a80ae116f, type: 3}
-    totalSpriteSurfaceArea: 1146142
+    totalSpriteSurfaceArea: 1151680
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300038, guid: 0843224eed8084940b8d441a80ae116f, type: 3}
+  - {fileID: 21300116, guid: 0843224eed8084940b8d441a80ae116f, type: 3}
   - {fileID: 21300036, guid: 0843224eed8084940b8d441a80ae116f, type: 3}
   - {fileID: 21300114, guid: 0843224eed8084940b8d441a80ae116f, type: 3}
   - {fileID: 21300026, guid: 0843224eed8084940b8d441a80ae116f, type: 3}
@@ -88,6 +89,7 @@ SpriteAtlas:
   - {fileID: 21300042, guid: 0843224eed8084940b8d441a80ae116f, type: 3}
   m_PackedSpriteNamesToIndex:
   - CP LVL2 Environment_19
+  - CP LVL2 Environment_51
   - CP LVL2 Environment_18
   - CP LVL2 Environment_50
   - CP LVL2 Environment_13

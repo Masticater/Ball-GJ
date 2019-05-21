@@ -10,12 +10,14 @@ public class Powers : MonoBehaviour
     public bool isPower = false;
     Coroutine TransformWater = null;
     Coroutine TransformRock = null;
+    CPPunch punch;
     
     int currentPower = 0;
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        punch = GetComponentInChildren<CPPunch>();
     }
 
     private void Update()
@@ -67,7 +69,15 @@ public class Powers : MonoBehaviour
         anim.SetBool("WaterTransform", false);
         isPower = true;
     }
-    
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (isPower)
+        {
+            punch.Punch(collision);
+        }
+    }
+
     IEnumerator PowerReturn()
     {
         if (currentPower == 0)

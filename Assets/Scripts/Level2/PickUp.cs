@@ -19,6 +19,10 @@ public class PickUp : MonoBehaviour
         if (collision.CompareTag("Player"))
         {
             collision.GetComponent<CPEnergy>().slider.value += energyBonus;
+            ps.Stop();
+            GetComponent<SpriteRenderer>().enabled = false;
+            GetComponent<BoxCollider2D>().enabled = false;
+            GetComponent<AudioSource>().Play();
         }
     }
 }

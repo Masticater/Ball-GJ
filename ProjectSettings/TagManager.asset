@@ -8,7 +8,9 @@ TagManager:
   - Enemy
   - EnemyBase
   - Destructable
+  - Glass
   - Group
+  - Fist
   layers:
   - Default
   - TransparentFX

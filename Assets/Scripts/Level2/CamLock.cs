@@ -6,10 +6,19 @@ public class CamLock : MonoBehaviour
 {
     public Cinemachine.CinemachineVirtualCamera cam;
     public GameObject[] boss;
+    public GameObject audioManager;
+    public AudioClip bossMusic;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        StartCoroutine(StartBossFight(collision.gameObject));
+        if (collision.CompareTag("Player"))
+        {
+            AudioSource audio = audioManager.GetComponent<AudioSource>();
+            StartCoroutine(StartBossFight(collision.gameObject));
+            audio.clip = bossMusic;
+            audio.Play();
+            audio.volume = 0.65f;
+        }
     }
 
     IEnumerator StartBossFight(GameObject player)
