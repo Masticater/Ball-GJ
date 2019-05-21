@@ -4,13 +4,7 @@ using UnityEngine;
 
 public class CleanUp : MonoBehaviour
 {
-    public float countdown = 5;
-
-	void Start()
-	{
-	
-	}
-	
+    public float countdown = 5; //Destroy projectiles and other miscellaneous objects after set time
 
     void Update()
     {

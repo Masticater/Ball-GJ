@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int PointValue; //10
-    public GameObject Projectile; //Rocket
-    public float Speed; //5
-    public bool Active; //False
+    public int PointValue; //How much an enemy is worth when killing
+    public GameObject Projectile; //Bullet to be shot
+    public float Speed; //Move Speed
+    public bool Active; //Is in play area
 
     private GameController gc;
 
@@ -16,7 +16,7 @@ public class Enemy : MonoBehaviour
         gc = GameObject.Find("GameController").GetComponent<GameController>();
     }
 
-    public void GetPoints()
+    public void GetPoints() //add points when is killed
     {
         gc.UpdateScore(PointValue);
     }

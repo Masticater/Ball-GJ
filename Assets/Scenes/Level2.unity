@@ -91717,7 +91717,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slider: {fileID: 0}
   fill: {fileID: 314440486}
-  powerCost: 2
+  powerCost: 1
   powers: {fileID: 0}
 --- !u!114 &1970017426
 MonoBehaviour:

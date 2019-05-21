@@ -20,6 +20,7 @@ public class Controller : MonoBehaviour
     private void Start()
     {
         Cursor.visible = false;
+        PlayerPrefs.SetInt("TotalScore", 0); //Reset player score if they return to main menu after losing
     }
 
     private void Update()

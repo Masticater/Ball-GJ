@@ -6,11 +6,15 @@ using UnityEditor;
 
 public class LoadNewLevel : MonoBehaviour
 {
-    public int level;
+    public int level; //Level to load
+    public bool hasLevelNum = false; //Use the public number or not
 
     private void Start()
     {
-        level = PlayerPrefs.GetInt("LastLevel");
+        if(hasLevelNum)
+            PlayerPrefs.SetInt("LastLevel", level);
+        else
+            level = PlayerPrefs.GetInt("LastLevel");
     }
 
     void Update()

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Enemies : MonoBehaviour
 {
-    Enemy enemy;
+    Enemy enemy; //base of enemies
     public float attackTime, minTime, maxTime;
     public Transform shotSpawn;
 
@@ -13,23 +13,21 @@ public class Enemies : MonoBehaviour
 	void Start()
 	{
         enemy = GetComponent<Enemy>();
-        if (!enemy)
-            print("No enemy script");
         rb2d = GetComponent<Rigidbody2D>();
 	}
 	
 
     void Update()
     {
-        if (enemy.Active)
+        if (enemy.Active) //If entered into play area
         {
             attackTime -= Time.deltaTime;
             if (attackTime <= 0)
             {
-                attackTime = Random.Range(minTime, maxTime);
-                Instantiate(enemy.Projectile, shotSpawn.transform.position, shotSpawn.rotation);
+                attackTime = Random.Range(minTime, maxTime); //Reset counter to time in between these two times
+                Instantiate(enemy.Projectile, shotSpawn.transform.position, shotSpawn.rotation); //Shoot
             }
         }
-        rb2d.velocity = transform.right * enemy.Speed;
+        rb2d.velocity = transform.right * enemy.Speed; //Move toward player and play area
     }
 }

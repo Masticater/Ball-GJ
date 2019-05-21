@@ -23,14 +23,10 @@ public class Claw : MonoBehaviour
     {
         fist = claw.GetComponent<SpriteRenderer>();
         originalHeight = ExtArm.transform.localPosition.y;
-        //print(m_CurrentClipInfo[0].clip.name);
-
     }
 
-    // Update is called once per frame
     void Update()
     {
-            //Starting position (58.37, 86.344, 0)
             iTween.MoveTo(gameObject, 
                 iTween.Hash("position", new Vector3(33f, transform.position.y), 
                 "speed", 5f, 
@@ -69,7 +65,7 @@ public class Claw : MonoBehaviour
     {
         bool touchingPlayer = false;
         bool grabbedPlayer = false;
-        //timeToPass is set to 1 in function that calls this coroutine, and is being deducted Time.deltaTime in Update()
+        
         while(timeToPass > 0)   //Check if player was grabbed by extended claw
         {
            touchingPlayer = Physics2D.IsTouching(playerCollider, clawCollider);
@@ -81,7 +77,7 @@ public class Claw : MonoBehaviour
                 break;
             }
             timeToPass -= Time.deltaTime;
-            yield return null;
+            yield return null; //Remember to give control back to Unity so a frame can pass, and restart the loop
         }
 
             if (grabbedPlayer)

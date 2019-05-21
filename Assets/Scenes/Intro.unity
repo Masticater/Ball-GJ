@@ -482,6 +482,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   level: 2
+  hasLevelNum: 1
 --- !u!1 &1301227890
 GameObject:
   m_ObjectHideFlags: 0

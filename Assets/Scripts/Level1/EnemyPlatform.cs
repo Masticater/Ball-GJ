@@ -6,13 +6,10 @@ public class EnemyPlatform : MonoBehaviour
 {
     public GameObject leftDestroyed, rightDestroyed;
 
-    private void Start()
+    public void DestroyColumn(Transform column) 
     {
-        
-    }
-
-    public void DestroyColumn(Transform column)
-    {
+        ///Find which side of the enemy's column was hit, and replace the enemy with
+        ///the correct missing-column-enemy        
         if (column.name == "LeftColumn")
         {
             Instantiate(leftDestroyed, transform.position, Quaternion.identity);
@@ -24,19 +21,4 @@ public class EnemyPlatform : MonoBehaviour
            Destroy(gameObject);
         }
     }
-    //private void OnDestroy(Transform column)
-    //{
-    //    if (column.name == "LeftColumn")
-    //    {
-    //        print("Left Destroyed");
-    //        Instantiate(leftDestroyed, transform.position, Quaternion.identity);
-
-    //    }
-    //    else
-    //    {
-    //        Instantiate(rightDestroyed, transform.position, Quaternion.identity);
-    //        print("Right Destroyed");
-    //    }
-
-    //}
 }

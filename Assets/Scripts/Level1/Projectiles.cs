@@ -1,22 +1,20 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Projectiles : MonoBehaviour
 {
     
-    public float speed;
-    public float earthForce = 5;
-    public Vector2 earthForceDirection;
-    public float waterForce = 5;
-    public Vector2 waterForceDirection;
-    public float windSpinSpeed;
+    public float speed; //Speed at which projectiles move
+    public float earthForce = 5; //Force at which a boulder is thrown
+    public Vector2 earthForceDirection; //Direction the boulder will be thrown
+    public float waterForce = 5; //Force at which a water blob will be thrown
+    public Vector2 waterForceDirection; //Direction the water blob will be thrown
+    public float windSpinSpeed; //How fast the mini-tornadoes spin around the player
 
     Rigidbody2D rb2d;
-    public float destroyTimer = 3f;
-    public GameObject explosion;
+    public float destroyTimer = 3f; //How long each power lasts
+    public GameObject explosion; //Explosion when hitting an enemy
 
-    public enum WeaponType { Earth, Water, Fire, Wind, Heart, Rocket }
+    public enum WeaponType { Earth, Water, Fire, Wind, Heart, Rocket } //Each projectile type
     public WeaponType type;
 
     void Start()
@@ -44,7 +42,7 @@ public class Projectiles : MonoBehaviour
             case WeaponType.Heart:
                 break;
             default:
-                print("Unknown weapon shot");
+                Debug.Log("Unknown weapon shot");
                 break;
         }
 
@@ -54,7 +52,7 @@ public class Projectiles : MonoBehaviour
     {
         if(type == WeaponType.Wind)
         {
-            transform.Rotate(new Vector3(0,0,1) * windSpinSpeed);
+            transform.Rotate(new Vector3(0,0,1) * windSpinSpeed); //Spin the mini-tornadoes to stay upright 
         }
 
         destroyTimer -= Time.deltaTime;
@@ -66,14 +64,15 @@ public class Projectiles : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D collision)
     {
-
-        if (!collision.CompareTag("MainCamera") && collision.transform != transform.parent)
+        //If the projectile is an enemy's projectile
+        if (!collision.CompareTag("MainCamera") && collision.transform != transform.parent) //If I did not hit the camera's colliders or myself
         {
-            if (type == WeaponType.Rocket && collision.CompareTag("Enemy"))
+            if (type == WeaponType.Rocket && collision.CompareTag("Enemy")) //Enemy's projectiles cannot hit each other's projectiles
                 return;
             
             if (collision.CompareTag("Player"))
                 collision.GetComponent<Player>().ReceiveDamage();
+            //If projectile is Player's projectile
             else
             {
                Enemy comp = collision.GetComponent<Enemy>();
@@ -81,7 +80,7 @@ public class Projectiles : MonoBehaviour
                     comp.GetPoints();
                 Destroy(collision.gameObject);
             }
-            
+            //Hitting anything destroys projectile and explodes
             Instantiate(explosion, collision.transform.position, Quaternion.identity);
             Destroy(gameObject);
         }          

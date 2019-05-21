@@ -4,12 +4,7 @@ using UnityEngine;
 
 public class MoveObject : MonoBehaviour
 {
-
-	void Start()
-	{
-	
-	}
-
+    ///Used specifically for the Enemy Base - The last moving object in the scene, so it stays in the play area
     public Vector3 moveDirection;
 
     void LateUpdate()

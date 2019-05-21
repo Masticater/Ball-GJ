@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class CamLock : MonoBehaviour
 {
+    /// <summary>
+    /// When the player gets into the boss area, set the camera to new,
+    /// locked position. Make sure the player is inside boss area and
+    /// cannot exit the area by setting the collider to non-trigger.
+    /// Enable the boss to be fought. Change music to boss fight music.
+    /// 
+    /// </summary>
     public Cinemachine.CinemachineVirtualCamera cam;
     public GameObject[] boss;
     public GameObject audioManager;
@@ -36,6 +43,7 @@ public class CamLock : MonoBehaviour
 
         if(player.transform.position.x < 45.8f)
         {
+            //If player is outside of arena, put player into arena
             iTween.MoveTo(player, new Vector3(45.8f, player.transform.position.y, 0), 1f);
         }
 
