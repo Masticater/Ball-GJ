@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5111052399486809230}
   - component: {fileID: 5111052399486809233}
   - component: {fileID: 3991900623733660911}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: BombTrap
   m_TagString: Group
   m_Icon: {fileID: 0}

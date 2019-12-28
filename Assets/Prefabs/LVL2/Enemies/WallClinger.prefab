@@ -131,6 +131,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 81f0e605567d9d64e9641cba615751a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointValue: 5
+  projectile: {fileID: 5127828025873696981, guid: deb34be3b24510c4eab169ec6888af68,
+    type: 3}
+  speed: 0
+  active: 0
   attackTime: 1
   minTime: 0.7
   maxTime: 2.5
@@ -167,8 +172,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa164f2ccf0abf54fad8cfe17bc536da, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PointValue: 10
-  Projectile: {fileID: 5127828025873696981, guid: deb34be3b24510c4eab169ec6888af68,
-    type: 3}
-  Speed: 0
-  Active: 1
+  pointValue: 0
+  projectile: {fileID: 7667242722808904255}
+  speed: 0
+  active: 0

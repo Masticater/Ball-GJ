@@ -20,7 +20,7 @@ public class EnemyActivator : MonoBehaviour
         Enemy enemy = collision.GetComponent<Enemy>();
         if(enemy != null) //if what entered play area was an enemy, activate it
         {
-            enemy.Active = true;
+            enemy.active = true;
         }
     }
 

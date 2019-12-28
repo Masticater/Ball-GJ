@@ -21,7 +21,7 @@ public class GameController : MonoBehaviour
 	
     public void UpdateWeaponIcon(int weapon)
     {
-        ///0 = earth
+        ///0 = Earth
         ///1 = Fireball
         ///2 = Waterball
         ///3 = WindPower

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 8687503618670770290}
   - component: {fileID: 3959762242179420475}
   - component: {fileID: 9208372545201231504}
-  m_Layer: 9
+  m_Layer: 13
   m_Name: SingleWindPower
   m_TagString: Untagged
   m_Icon: {fileID: 0}

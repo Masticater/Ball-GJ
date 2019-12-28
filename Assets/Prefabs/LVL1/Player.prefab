@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 627814894}
   - component: {fileID: 627814895}
-  m_Layer: 10
+  m_Layer: 0
   m_Name: SolidBody
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -74,7 +74,7 @@ GameObject:
   - component: {fileID: 1873840083}
   - component: {fileID: 1873840085}
   - component: {fileID: 1873840084}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Explosions (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -173,7 +173,7 @@ GameObject:
   - component: {fileID: 2057942271}
   - component: {fileID: 2057942273}
   - component: {fileID: 2057942272}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Explosions
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -270,7 +270,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2112916095}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: ShotSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -305,7 +305,7 @@ GameObject:
   - component: {fileID: 7741481564642775680}
   - component: {fileID: 540777803417102516}
   - component: {fileID: 540777803417102517}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Player
   m_TagString: Player
   m_Icon: {fileID: 0}

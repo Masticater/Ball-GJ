@@ -55,7 +55,7 @@ public class Weapons : MonoBehaviour
         else
             spawnPoint = shotSpawn.transform.position; //Everything else is shot out front
         GameObject shot = Instantiate(bulletType, spawnPoint, Quaternion.identity); //Shoot specific attack
-        if (bulletType != attack[3])
-            shot.transform.SetParent(transform); //Setting the parent so OnCollision doesn't damage player
+        //if (bulletType != attack[3])
+            //shot.transform.SetParent(transform); //Setting the parent so OnCollision doesn't damage player
     }
 }

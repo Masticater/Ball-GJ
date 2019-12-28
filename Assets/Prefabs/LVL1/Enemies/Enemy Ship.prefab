@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 3778607245423460551}
   - component: {fileID: 4315551951448266678}
   - component: {fileID: 963045784}
-  - component: {fileID: 5693225842585057483}
   m_Layer: 11
   m_Name: Enemy Ship
   m_TagString: Enemy
@@ -173,24 +172,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8ee3423a924361e43a01bac658bf03b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pointValue: 10
+  projectile: {fileID: 3653195515519010188, guid: a7922e1c62911404892b97efb6403901,
+    type: 3}
+  speed: 1.5
+  active: 0
   attackTime: 3
   minTime: 4
   maxTime: 5
   shotSpawn: {fileID: 1788227586}
---- !u!114 &5693225842585057483
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5432389830408029755}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aa164f2ccf0abf54fad8cfe17bc536da, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  PointValue: 10
-  Projectile: {fileID: 3653195515519010188, guid: a7922e1c62911404892b97efb6403901,
-    type: 3}
-  Speed: 1.5
-  Active: 0

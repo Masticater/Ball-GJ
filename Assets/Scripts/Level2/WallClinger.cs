@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class WallClinger : MonoBehaviour
+public class WallClinger : Enemy
 {
     public float attackTime, minTime, maxTime;
 
-    Enemy enemy;
     FieldOfView fov;
-    void Start()
+    protected override void Start()
     {
+        base.Start();
         attackTime = Random.Range(minTime, maxTime);
-        enemy = GetComponent<Enemy>();
         fov = GetComponent<FieldOfView>();
     }
 
@@ -27,7 +26,7 @@ public class WallClinger : MonoBehaviour
             if (attackTime <= 0)
             {
                 attackTime = Random.Range(minTime, maxTime);
-                Instantiate(enemy.Projectile, transform.position, transform.rotation);
+                Instantiate(projectile, transform.position, transform.rotation);
             }
 
         }

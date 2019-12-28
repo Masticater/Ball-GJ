@@ -65,18 +65,15 @@ public class Projectiles : MonoBehaviour
     void OnTriggerEnter2D(Collider2D collision)
     {
         //If the projectile is an enemy's projectile
-        if (!collision.CompareTag("MainCamera") && collision.transform != transform.parent) //If I did not hit the camera's colliders or myself
+        if (!collision.CompareTag("MainCamera")) //If I did not hit the camera's colliders
         {
-            if (type == WeaponType.Rocket && collision.CompareTag("Enemy")) //Enemy's projectiles cannot hit each other's projectiles
-                return;
-            
             if (collision.CompareTag("Player"))
                 collision.GetComponent<Player>().ReceiveDamage();
             //If projectile is Player's projectile
-            else
+            else if(collision.CompareTag("Enemy"))
             {
                Enemy comp = collision.GetComponent<Enemy>();
-                if (comp)
+                if (comp != null)
                     comp.GetPoints();
                 Destroy(collision.gameObject);
             }
